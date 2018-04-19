@@ -57,7 +57,7 @@ def git_tfs():
     # subprocess.call(["git-tfs", "clone", "--deep", tfs_url, git_url])
     subprocess.call(["git", "clone", git_url, cwdir])
     subprocess.call(["git", "init"])
-    # subprocess.call(["git", "pull"])
+    subprocess.call(["git", "pull"])
 
 
 def tfs_git():
