@@ -62,7 +62,7 @@ def git_tfs():
 
 def tfs_git():
     subprocess.call(["git", "init"])
-    subprocess.call(["git", "remote", "add", "origin", "https://github.com/aishwarye/DormRoom"])
+    subprocess.call(["git", "remote", "add", "-f", "origin", "https://github.com/aishwarye/DormRoom"])
     pp("Preparing to stage the files...")
     cwdir = 'C:\\Users\\Aishwarye_Chaudhary\\Downloads\\Hackathon\\DormRoom'
     subprocess.call(["git", "add", "."])
