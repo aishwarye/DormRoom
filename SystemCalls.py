@@ -63,7 +63,7 @@ def tfs_git():
     pp("Committing the files now.")
     subprocess.call(["git", "commit", "-a", "-m", "'Add existing file'"])
     pp("Now, pushing the changes.")
-    subprocess.call(["git", "push", "origin", "master"])
+    subprocess.call(["git", "push", "DormRoom", "master"])
     pp("Pushed.")
 
 
