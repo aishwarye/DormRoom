@@ -12,12 +12,18 @@ def main():
     url = 'http://foo.appspot.com/abc?def=ghi'
     parsed = urlparse.urlparse(url)
     val = int(input("Press 1 for Git to TFS. \nPress 2 for TFS to Git.\n"))
-    print(val)
-    # git_tfs()
+    login()
     if val == 1:
         git_tfs()
     else:
         tfs_git()
+
+
+def login():
+    user = "aishwarye"
+    passw = "721_aish"
+    subprocess.call(["git", "config", "--global", "user.name", "aishwarye"])
+    subprocess.call(["git", "config", "--global", "user.email", "721aish@gmail.com"])
 
 
 def git_tfs():
